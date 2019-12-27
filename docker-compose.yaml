@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+    kanecta:
+        image: kanecta/kanecta:latest
+        restart: always
+        ports:
+            - "2000:5656"
+        volumes:
+            - /home/sammy/kanecta-data:/kanecta-data
+            - /home/sammy/kanecta-backups:/kanecta-backups
